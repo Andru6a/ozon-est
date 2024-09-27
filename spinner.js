@@ -30,7 +30,7 @@ function animation(checked){
 function changeValue(value) {
   const circle = spinner.querySelector('circle');
   
-  circle.style.strokeDashoffset = `${350-350*value/100}`;
+  circle.style.strokeDashoffset = `${350-350*value/100+3}`;
 }
 
 ckeckboxes.forEach((checkbox) => {
