@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ozon test</title>
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Progress</h1>
+
+    <div class="spinner">
+      <div class="spinner__svg">
+        <div class="spinner__svg-inner">
+        </div>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="120px" height="120px">
+          <circle cx="60" cy="60" r="55" />
+        </svg>
+      </div>
+      <div class="spinner__control">
+        <div class="spinner__control-row">
+          <input type="number" class="spinner__control-input--number" min="1" max="100">
+          </label>
+          <p>Value</p>
+        </div>
+        <div class="spinner__control-row">
+          <label class="spinner__control-switch" ">
+            <input type="checkbox" class="spinner__control-input" data-input="Animate">
+            <span class="spinner__control-slider"></span>
+          </label>
+          <p>Animate</p>
+        </div>
+        <div class="spinner__control-row">
+          <label class="spinner__control-switch">
+            <input type="checkbox" class="spinner__control-input" data-input="Hide">
+            <span class="spinner__control-slider"></span>
+          </label>
+          <p>Hide</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./spinner.js"></script>
+</body>
+
+</html>
