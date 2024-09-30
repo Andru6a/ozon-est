@@ -130,6 +130,8 @@ a {
           transform: rotate(270deg);
   top: 0;
   left: 0;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 .spinner__svg svg circle {
   fill: none;
@@ -230,6 +232,11 @@ a {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+}
+
+.paused {
+  -webkit-animation-play-state: paused !important;
+          animation-play-state: paused !important;
 }
 
 @media (max-width: 568px) {

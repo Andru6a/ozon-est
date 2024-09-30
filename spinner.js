@@ -12,18 +12,19 @@ valueInput.value = 60;
 
 function hide(checked) {
   if (checked) {
-    spinner.style.display = 'none';
+    spinner.style.visibility = 'hidden';
+    spinner.style.opacity = '0';
   } else {
-    spinner.style.display = 'flex';
+    spinner.style.visibility = 'visible';
+    spinner.style.opacity = '1';
   }
 }
 
 function animation(checked){
-  console.log('here')
   if (!checked) {
-    spinnerSvg.style.animation = 'none';
+    spinnerSvg.classList.add('paused');
   } else {
-    spinnerSvg.style.animation = 'rotation 2s linear infinite';
+    spinnerSvg.classList.remove('paused');
   }
 }
 
